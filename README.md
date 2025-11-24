@@ -32,16 +32,31 @@ User Query → Router
 
 ---
 
+## 🗂 Project Layout
+
+Langraph_Agent
+├── graph_agent.py  
+├── main.py  
+├── requirements.txt  
+├── .env  
+├── resources/  
+│   └── AI_Agents.pdf  
+├── tools/  
+│   ├── find_weather.py  
+│   └── rag.py  
+└── tests/  
+    ├── test_agent.py  
+    └── test_integration.py  
+
+---
+
 ## Quickstart
 
-git clone <repo-url>
+git clone https://github.com/vinay-murakala/LangGraph_Agent
 cd ai-agent-assignment
 pip install -r requirements.txt
-cp .env.example .env # Add your API keys
+cp .env.example .env 
 streamlit run main.py
-
-yaml
-Copy code
 
 You’ll need valid keys for **Gemini** and **OpenWeatherMap**.
 
@@ -62,15 +77,9 @@ You’ll need valid keys for **Gemini** and **OpenWeatherMap**.
 Unit tests & Integration tests (real tool calls)
 python tests/test_agent.py
 
-java
-Copy code
-
 For LangSmith evaluation (10 samples):
 
 python eval_agent.py
-
-yaml
-Copy code
 
 ---
 
@@ -82,30 +91,5 @@ GOOGLE_API_KEY=...
 OPENWEATHERMAP_API_KEY=...
 LANGCHAIN_API_KEY=...
 LANGCHAIN_TRACING_V2=true
-
-yaml
-Copy code
-
-
----
-
-## 🗂 Project Layout
-
-.
-├── graph_agent.py
-├── main.py
-├── requirements.txt
-├── .env
-├── resources/
-│ └── AI_Agents.pdf
-├── tools/
-│ ├── find_weather.py
-│ └── rag.py
-└── tests/
-├── test_agent.py
-└── test_integration.py
-
-yaml
-Copy code
 
 ---
